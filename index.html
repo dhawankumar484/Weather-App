@@ -4,9 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="app-wrap container p-5">
+		<header class="row p-5">
+			<input type="text" autocomplete="off" class="search-box" placeholder="Search city">
+		</header>
+
+		<main class="row p-5">
+			<section class="location">
+				<div class="city">Agra, Uttar Pradesh</div>
+				<div class="date">Monday 30 May</div>
+			</section>
+
+			<div class="current">
+				<div class="temp">25<span>°C</span></div>
+				<div class="weather">Sunny</div>
+				<div class="hi-low">23°C / 25°C</div>
+			</div>
+		</main>
+	</div>
+    <!-- <div class="container">
+        Hello
+    </div> -->
     <script src="weather.js"></script>
 </body>
 </html>
