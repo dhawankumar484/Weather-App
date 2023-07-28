@@ -8,7 +8,7 @@ searchbox.addEventListener("keypress", setQuery);
 
 function setQuery(evt) {
   if (evt.keyCode == 13) {
-    getResults(searchbox.value) ;
+    getResults(searchbox.value);
   }
 }
 
@@ -32,11 +32,11 @@ function displayResults(weather) {
   let temp = document.querySelector(".current-temp .temp");
   temp.innerHTML = `${Math.round(weather.main.temp)}<span>°C</span>`;
 
-  let weather = document.querySelector(".current-temp .weather");
-  weather.innerText = weather.weather[0].main;
+  let curr_weather = document.querySelector(".current-temp .weather");
+  curr_weather.innerText = weather.weather[0].main;
 
-  let highlowTemp = document.querySelector(".current-temp .high-low");
-  highlowTemp.innerText = `Low: ${weather.main.temp_min}°C / High: ${weather.main.temp_max}°C`;
+  let curr_high_low = document.querySelector(".current-temp .high-low");
+  curr_high_low.innerText = `Low: ${weather.main.temp_min}°C / High: ${weather.main.temp_max}°C`;
 }
 
 function dateBuilder(d) {
