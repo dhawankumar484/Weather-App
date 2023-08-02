@@ -40,37 +40,37 @@ function displayResults(weather) {
 
   let background_img = document.querySelector("body");
   if(weather.weather[0].icon == "01d"){
-    background_img.style.backgroundImage = "url(../images/clear_day.jpg)"
+    background_img.style.backgroundImage = "url(./images/clear_day.jpg)"
   }
   else if(weather.weather[0].icon == "01n"){
-    background_img.style.backgroundImage = "url(../images/clear_night.jpg)"
+    background_img.style.backgroundImage = "url(./images/clear_night.jpg)"
   }
   else if(weather.weather[0].icon == "02d"){
-    background_img.style.backgroundImage = "url(../images/few_clouds_day.jpg)"
+    background_img.style.backgroundImage = "url(./images/few_clouds_day.jpg)"
   }
   else if(weather.weather[0].icon == "02n"){
-    background_img.style.backgroundImage = "url(../images/few_clouds_night.jpg)"
+    background_img.style.backgroundImage = "url(./images/few_clouds_night.jpg)"
   }
   else if(weather.weather[0].icon == "03d" || weather.weather[0].icon == "03n" || weather.weather[0].icon == "04d" || weather.weather[0].icon == "04n"){
-    background_img.style.backgroundImage = "url(../images/broken_clouds.jpg)"
+    background_img.style.backgroundImage = "url(./images/broken_clouds.jpg)"
   }
   else if(weather.weather[0].icon == "09d" || weather.weather[0].icon == "09n"){
-    background_img.style.backgroundImage = "url(../images/shower_rain.jpg)"
+    background_img.style.backgroundImage = "url(./images/shower_rain.jpg)"
   }
   else if(weather.weather[0].icon == "10d" || weather.weather[0].icon == "10n"){
-    background_img.style.backgroundImage = "url(../images/rain.jpg)"
+    background_img.style.backgroundImage = "url(./images/rain.jpg)"
   }
   else if(weather.weather[0].icon == "11d" || weather.weather[0].icon == "11n"){
-    background_img.style.backgroundImage = "url(../images/thunderstrom.jpg)"
+    background_img.style.backgroundImage = "url(./images/thunderstrom.jpg)"
   }
   else if(weather.weather[0].icon == "13d" || weather.weather[0].icon == "13n"){
-    background_img.style.backgroundImage = "url(../images/snow.jpg)"
+    background_img.style.backgroundImage = "url(./images/snow.jpg)"
   }
   else if(weather.weather[0].icon == "50d" || weather.weather[0].icon == "50n"){
-    background_img.style.backgroundImage = "url(../images/mist.jpg)"
+    background_img.style.backgroundImage = "url(./images/mist.jpg)"
   }
   else{
-    background_img.style.backgroundImage = "url(../images/background-img.jpg)"
+    background_img.style.backgroundImage = "url(./images/background-img.jpg)"
   }
 }
 
